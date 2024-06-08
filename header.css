@@ -1,0 +1,1157 @@
+.header{
+    display: flex;
+}
+
+/* МЕНЮ */
+.menu{
+    display: flex;
+    /* position: fixed; */
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(247, 243, 243);
+
+    height: 70px;
+    width: 100%;
+
+    margin-top: 10px;
+
+}
+
+/* ЛОГОТИП/СЛОВА */
+.logo_title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 34px;
+    font-weight:bolder;
+    letter-spacing: 0.1em;
+    color: rgb(0, 0, 0);
+
+    box-shadow: 0px 0px 2px 2px #533a18;
+}
+.logo_title:hover{
+    color: rgb(180, 33, 33);
+}
+
+.logo_text{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    margin-left: -7px;
+    margin-top: 2px;
+
+    box-shadow: 0px 2px 0px 2px #533a18;
+
+    width: 120px;
+} 
+.logo_text:hover{
+    color: rgb(180, 33, 33);
+}
+
+/* МЕНЮ НАВІГАЦІЇ */
+.menu_navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    gap: 80px;
+}
+
+
+.menu_master{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;
+    box-shadow: 1px 1px 1px 2px #533a18;
+}
+.menu_master:hover{
+    color: rgb(180, 33, 33);
+}
+.menu_master:active{
+    color: rgb(255, 0, 0);
+}
+
+.menu_services{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;
+    box-shadow: 1px 1px 1px 1px #533a18;
+}
+.menu_services:hover{
+    color: rgb(180, 33, 33);
+}
+.menu_services:active{
+    color: rgb(255, 0, 0);
+}
+
+.menu_work{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;  
+    box-shadow: 1px 1px 1px 2px #533a18;
+}
+.menu_work:hover{
+    color: rgb(180, 33, 33);
+}
+.menu_work:active{
+    color: rgb(255, 0, 0);
+}
+
+.menu_about-us{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;   
+    box-shadow: 1px 1px 1px 1px #533a18;
+}
+.menu_about-us:hover{
+    color: rgb(180, 33, 33);
+}
+.menu_about-us:active{
+    color: rgb(255, 0, 0);
+}
+
+.menu_location{
+    text-decoration: none;
+    font-family: 'consolas';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;
+    box-shadow: 1px 1px 1px 2px #533a18;
+}
+.menu_location:hover{
+    color: rgb(180, 33, 33);
+}
+.menu_location:active{
+    color: rgb(255, 0, 0);
+}
+
+/* ЗВ*ЯЗАТИСЯ З НАМИ анімована кнопка*/
+.button{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #362610;
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+/* ЛІНІЇ навколо кнопки */
+.button_line{
+    position: absolute;
+    display: block;
+}
+.button_line-top{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg, transparent ,#533a18);
+}
+.button:hover .button_line-top{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.button_line-buttom{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg, transparent ,#533a18);
+}
+.button:hover .button_line-buttom{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.button_line-left{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(0deg, transparent ,#533a18);
+}
+.button:hover .button_line-left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+.button_line-right{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg, transparent ,#533a18);
+}
+.button:hover .button_line-right{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+/* Для самої кнопки */
+.button:hover{
+    box-shadow: 0 0 10px #533a18, 0 0 40px #533a18, 0 0 40px #533a18;
+    transition-delay: 1s;
+    background-color: #533a18;
+    color: rgb(236, 234, 234);
+}
+
+/* БАНЕР */
+.baner{
+    display: flex;
+    width: 100%;
+    height: 900px;
+    opacity: 0.6;
+}
+
+ /* ЛОЗУНГИ  */
+ .slogans{
+    display: flex;
+    margin-top: -550px;
+    margin-left: 100px;
+    flex-direction: column;
+ }
+ .slogans_title{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 50px;
+    font-weight:bolder;
+    letter-spacing: 0.03em;
+    --white: rgb(0, 0, 0);
+    --black:#000000;
+    
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--black);
+
+    text-shadow: -2px 0px var(--white);
+    opacity: 0.9;
+ }
+ .slogans_text{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 36px;
+    font-weight:bold;
+    letter-spacing: 0.06em;
+    --white: #000000;
+    --black:#000000;
+    
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--black);
+
+    text-shadow: -1px 0px var(--white);
+    opacity: 0.9;
+
+    margin-top: 12px;
+ }
+
+ /* ОНЛАЙН ЗАПИС - КНОПКА */
+ .online_record{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight:bold;
+    color: #533a18;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.06em;
+    margin-left: 44%;
+    margin-top: 60px;
+    box-shadow: 0px 0px 3px 4px #533a18;
+
+ }
+ .online_record:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+ }
+ .online_record:active{
+    background-color: #7a5520;
+ }
+
+
+ /* -------------------------------MAIN------------------------------------------- */
+
+ /* ПРО НАС */
+ .about_us-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+ }
+ .main_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    background-color: rgb(247, 243, 243);
+    margin-top: 100px;
+ }
+/* ФОТО ПРО НАС */
+ .haircut_photo{
+    display: flex;
+    height: 600px;
+    width: 400px;
+ }
+ .about_us-photo{
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    gap: 15px;
+ }
+ /* опис */
+ .about_us-text{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+ }
+.about_us-title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 34px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+}
+.about_line{
+    display: flex;
+    justify-content: center;
+    height: 3px;
+    width: 150px;
+    background-color: #533a18;
+    margin-top: 17px;
+}
+.about_us-paragraph{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight:lighter;
+    letter-spacing: 0.01em;
+    color: rgb(49, 49, 49);
+    margin-top: 45px;
+}
+.about_us-paragraph-one{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight:lighter;
+    letter-spacing: 0.01em;
+    color: rgb(71, 71, 71);
+    margin-top: 20px;
+}
+.about_us-paragraph-two{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight:lighter;
+    letter-spacing: 0.01em;
+    color: rgb(71, 71, 71);
+    margin-top: 30px;
+}
+
+
+/* НАШІ ПОСЛУГИ */
+.services_container{
+    margin-top: 60px;
+}
+.our_line{
+    display: flex;
+    justify-content: center;
+    height: 3px;
+    width: 700px;
+    background-color: #533a18;
+    margin-left: 32%;
+    margin-top: 120px;
+}
+.our_services{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 36px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.our_line-one{
+    display: flex;
+    height: 3px;
+    width: 700px;
+    background-color: #533a18;
+    margin-left: 32%;
+    margin-top: 18px;
+}
+/* блок 1 */
+.cutting_beard{
+    display: flex;
+    flex-direction: row;
+}
+.cutting_beard-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    background-color: rgb(247, 243, 243);
+}
+.cutting_beard-photo{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    opacity: 0.8;
+}
+.cutting_beard-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0); 
+}
+.cutting_beard-text{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight:lighter;
+    letter-spacing: 0.02em;
+    color: rgb(46, 46, 46); 
+    width: 550px;
+}
+/* блок 2 */
+.beard-photo{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    opacity: 0.8; 
+}
+.beard{
+    display: flex;
+    flex-direction: row;
+}
+.beard_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    background-color: rgb(247, 243, 243); 
+}
+.beard_title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+}
+.beard_text{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight:lighter;
+    letter-spacing: 0.02em;
+    color: rgb(46, 46, 46); 
+    width: 550px;
+}
+
+.services_blok-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* блок 3 */
+.childrens_haircut-photo{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    opacity: 0.8;  
+}
+.childrens_haircut{
+    display: flex;
+    flex-direction: row;
+}
+.childrens_haircut-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    background-color: rgb(247, 243, 243); 
+}
+.childrens_haircut-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+}
+.childrens_haircut-text{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight:lighter;
+    letter-spacing: 0.02em;
+    color: rgb(46, 46, 46); 
+    width: 550px;
+}
+/* блок 4 */
+.investment-photo{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    opacity: 0.8; 
+}
+.investment{
+    display: flex;
+    flex-direction: row;
+}
+.investment_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    background-color: rgb(247, 243, 243); 
+}
+.investment_title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0); 
+}
+.investment_text{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight:lighter;
+    letter-spacing: 0.02em;
+    color: rgb(46, 46, 46); 
+    width: 550px; 
+}
+
+.services_blok-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+/* кнопка записатися */
+.online_register{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight:bold;
+    color: #533a18;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.06em;
+    margin-top: 100px;
+    margin-left: 44%;
+    box-shadow: 0px 0px 3px 4px #533a18;
+ }
+ .online_register:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+ }
+ .online_register:active{
+    background-color: #7a5520;
+ }
+
+/* -------------------------------МАЙСТРИ---------------------------- */
+.master_container{
+    margin-top: 80px;
+}
+.master_line{
+    display: flex;
+    justify-content: center;
+    height: 3px;
+    width: 700px;
+    background-color: #533a18;
+    margin-left: 32%;
+}
+.master_title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 40px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0); 
+}
+.master_line-one{
+    display: flex;
+    justify-content: center;
+    height: 3px;
+    width: 700px;
+    background-color: #533a18;
+    margin-left: 32%;
+    margin-top: 17px;
+}
+.master_menu{
+    margin-top: 80px;
+}
+/* блок для майстрів */
+.master_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Майстер іван */
+.master_ivan{
+    opacity: 0.9;
+}
+.master_ivan-photo{
+    display: flex;
+    height: 600px;
+    box-shadow: 0px 0px 4px 6px #533a18;
+}
+.master_ivan-photo:hover{
+opacity: 0.7;
+}
+.master_ivan-info{
+    margin-top: -220px;
+    margin-left: 20px;
+}
+.master_ivan-title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.master_ivan-text{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255); 
+    justify-content: center;
+    align-items: center;
+}
+.master_ivan-online{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 280px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #ffffff;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.06em;
+    margin-left: 60px;
+    box-shadow: 0px 0px 3px 4px #ffffff;
+}
+.master_ivan-online:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+ }
+ .master_ivan-online:active{
+    background-color: #f7950d;
+ }
+
+
+/* Майстер Петро */
+.master_petro{
+    opacity: 0.9;
+}
+.master_petro-photo{
+    display: flex;
+    height: 600px;
+    box-shadow: 0px 0px 4px 6px #533a18;
+}
+.master_petro-photo:hover{
+opacity: 0.7;
+}
+.master_petro-info{
+    margin-top: -220px;
+    margin-left: 20px;
+}
+.master_petro-title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.master_petro-text{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255); 
+    justify-content: center;
+    align-items: center;
+}
+.master_petro-online{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 280px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #ffffff;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.06em;
+    margin-left: 60px;
+    box-shadow: 0px 0px 3px 4px #ffffff;
+}
+.master_petro-online:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+ }
+ .master_petro-online:active{
+    background-color: #f7950d;
+ }
+
+
+
+/* Майстер Володя  */
+.master_vova{
+    opacity: 0.9;
+}
+.master_vova-photo{
+    display: flex;
+    height: 600px;
+    box-shadow: 0px 0px 4px 6px #533a18;
+}
+.master_vova-photo:hover{
+opacity: 0.7;
+}
+.master_vova-info{
+    margin-top: -220px;
+    margin-left: 20px;
+}
+.master_vova-title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.master_vova-text{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255); 
+    justify-content: center;
+    align-items: center;
+}
+.master_vova-online{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 280px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #ffffff;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.06em;
+    margin-left: 65px;
+    box-shadow: 0px 0px 3px 4px #ffffff;
+}
+.master_vova-online:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+ }
+ .master_vova-online:active{
+    background-color: #f7950d;
+ }
+
+/* майстер Сергій */
+.master_sergo{
+    opacity: 0.9;
+}
+.master_sergo-photo{
+    display: flex;
+    height: 600px;
+    box-shadow: 0px 0px 4px 6px #533a18;
+}
+.master_sergo-photo:hover{
+opacity: 0.7;
+}
+.master_sergo-info{
+    margin-top: -220px;
+    margin-left: 20px;
+}
+.master_sergo-title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.master_sergo-text{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight:bolder;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255); 
+    justify-content: center;
+    align-items: center;
+}
+.master_sergo-online{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 280px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #ffffff;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.06em;
+    margin-left: 60px;
+    box-shadow: 0px 0px 3px 4px #ffffff;
+}
+.master_sergo-online:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+ }
+ .master_sergo-online:active{
+    background-color: #f7950d;
+ }
+
+ /* ----------------------------------БАНЕР З ЛОГОТИПОМ--------------------------- */
+
+ .container_baner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-evenly;
+ }
+ .baner-photo{
+    display:flex;
+    width: 700px;
+    height: 500px;
+ }
+ .menu_baner{
+    margin-top: 40px;
+    margin-left: -140px;
+ }
+ .baner_title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+ }
+ .baner_line{
+    display: flex;
+    height: 3px;
+    width: 500px;
+    background-color: #533a18;
+ }
+ .baner_text{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight:lighter;
+    letter-spacing: 0.02em;
+    color: rgb(39, 39, 39); 
+    width: 400px;
+    margin-top: 40px;
+ }
+ .baner_text-one{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight:lighter;
+    letter-spacing: 0.02em;
+    color: rgb(39, 39, 39); 
+    width: 400px;
+    margin-top: 40px;
+ }
+
+ /* -----------------------------------ГАЛАРЕЯ---------------------------------- */
+.photo_title-menu{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+    color: #000000;
+    justify-content: center;
+    align-items: center;  
+}
+.photo_line-item{
+    display: flex;
+    height: 3px;
+    width: 500px;
+    background-color: #533a18; 
+}
+.photo_line-item-one{
+    display: flex;
+    height: 3px;
+    width: 500px;
+    background-color: #533a18;
+}
+.photo_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 10px;
+}
+
+ :root{
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+ }
+ .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+ }
+ .items{
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
+ }
+ .item{
+    width: calc(var(--index) * 6);
+    height: calc(var(--index) * 20);
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(.5);
+    transition: transform 1.25s var(--transition),
+                filter 3s var(--transition),
+                width 1.25s var(--transition);
+    will-change: transform, filter, rotatey, width;
+ }
+ .item::before, .item::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
+ }
+ .item::after{
+    left: calc(var(--index) * -1)
+ }
+ .items .item:hover{
+    transform: translateZ(calc(var(--index) * 10));
+ }
+ /* RIGHT */
+ .items .item:hover + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+ }
+ .items .item:hover + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+ }
+ .items .item:hover + * + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+ }
+ .items .item:hover + * + * + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+ }
+
+ /* LEFT */
+ .items .item:has(+ :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+ }
+ .items .item:has(+ * +:hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+ }
+ .items .item:has(+ * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+ }
+ .items .item:has(+ * + * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+ }
+ .items .item:active, .items .item:focus{
+    width: 28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 .45vw;
+ }
+
+/* Кнопка */
+.photo_online{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 360px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #533a18;
+    opacity: 0.9;
+    background-color: transparent;
+    letter-spacing: 0.08em;
+    margin-left: 40.5%;
+    box-shadow: 0px 0px 3px 4px #ffffff;
+}
+.photo_online:hover{
+    background-color: #533a18;
+    color: white;
+    transition: 0.7s;
+    box-shadow: 0px 0px 3px 4px #533a18;
+ }
+ .photo_online:active{
+    background-color: #f7950d;
+ }
+
+ /* -----------------------ФУТЕР---------------------------------- */
+ /* Карта */
+ .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(247, 243, 243);
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+ }
+ iframe{
+    height: 480px;
+    width: 100%;
+    filter: invert(80%);
+ }
+ /* КОНТАКТИ */
+ .map_contact{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(214, 214, 214, 0.418);
+    margin-top: -360px;
+    margin-left: 350px;
+    position: absolute;
+ }
+ .contact_title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight: bolder;
+    letter-spacing: 0.07em;
+    color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+ }
+
+
+
+
+ 
+ /* нижня лінія сайту */
+ .map_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 243, 243);
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+ }
+ .map_line-title{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+    color: #533a18;
+ }
